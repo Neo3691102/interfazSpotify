@@ -1,3 +1,20 @@
+/*ver si es correcto para ruta absoluta*/
+.l-section {
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+}
+.l-section__s1 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.l-section__s1 img {
+  width: 18px;
+  height: 18px;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,10 +26,6 @@ main {
   display: grid;
   grid-template-columns: 1fr 50% 1fr;
   height: 90vh;
-}
-
-.l-section {
-  background-color: green;
 }
 
 .c-section {
