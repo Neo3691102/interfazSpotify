@@ -1,0 +1,17 @@
+/*ver si es correcto para ruta absoluta*/
+@import '../base/mixins';
+
+.l-section{
+    background-color: green;
+    @include flexbox(column);
+  &__s1{
+    width: 100%;
+    @include flexbox(row);
+    gap: 10px;
+    & img{
+        width: 18px;
+        height: 18px;
+    }
+  }
+}
+

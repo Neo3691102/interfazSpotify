@@ -1,5 +1,8 @@
 @import 'base/variables';
 @import 'base/functions';
+@import 'base/mixins';
+
+@import 'layout/l-section';
 
 
 body{
@@ -15,10 +18,7 @@ main{
     height: 90vh;
 }
 
-.l-section{
-    background-color: green;
-  
-}
+
 
 .c-section{
     background-color: yellow;
