@@ -1,3 +1,7 @@
+.c-section__s2__container3 .song p, .c-section__s2__container1 p, .c-section__s1__container1 .subcontainer2__container1 {
+  font-size: clamp(0.3rem, 1vw, 0.65rem);
+}
+
 .l-section {
   background-color: #000000;
   display: flex;
@@ -141,6 +145,158 @@
   cursor: pointer;
 }
 
+.c-section__s1__container1 {
+  width: 100%;
+  height: 18.75rem;
+  background-image: url("../assets/img/slipknot3.jpg");
+  background-size: 100% 18.75rem;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.c-section__s1__container1 .subcontainer1 {
+  height: 1.6875rem;
+  padding: 0.1875rem 0 0.125rem 0.9375rem;
+}
+.c-section__s1__container1 .subcontainer1 box-icon {
+  background-color: #4D545A;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+.c-section__s1__container1 .subcontainer1 box-icon:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.c-section__s1__container1 .subcontainer2 {
+  height: 1.6875rem;
+  padding: 0.1875rem 0.9375rem 0.125rem 0.9375rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 0.5625rem;
+}
+.c-section__s1__container1 .subcontainer2__container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.1875rem;
+  color: white;
+  background-color: #4D545A;
+  border-radius: 0.75rem;
+  padding: 0 0.625rem;
+  opacity: 0.8;
+}
+.c-section__s1__container1 .subcontainer2__container1 box-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.c-section__s1__container1 .subcontainer2__container1:hover {
+  opacity: 0.9;
+  color: white;
+  cursor: pointer;
+}
+.c-section__s1__container1 .subcontainer2__container2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5625rem;
+}
+.c-section__s1__container1 .subcontainer2__container2 box-icon {
+  background-color: #4D545A;
+  border-radius: 50%;
+  opacity: 0.8;
+  border: 0.1875rem solid #4D545A;
+  width: 1.6875rem;
+  height: 1.6875rem;
+}
+.c-section__s1__container1 .subcontainer2__container2 box-icon:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.c-section__s1__container1 .subcontainer2__container2 img {
+  width: 1.3125rem;
+  height: 1.3125rem;
+  border-radius: 50%;
+  border: 0.1875rem solid #4D545A;
+}
+.c-section__s1__container1 .subcontainer2__container2 img:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}
+.c-section__s1__container1 .subcontainer3 {
+  color: white;
+}
+.c-section__s1__container1 .subcontainer3__container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.1875rem;
+  font-size: clamp(0.3rem, 1vw, 0.7rem);
+  padding: 0.1875rem 0 0.125rem 0.9375rem;
+}
+.c-section__s1__container1 .subcontainer3 h1 {
+  font-size: 5.5rem;
+  padding: 0.1875rem 0 0.125rem 0.9375rem;
+  margin: 0;
+}
+.c-section__s1__container1 .subcontainer3 h5 {
+  padding: 0.1875rem 0 0.125rem 0.9375rem;
+  margin: 0 0 1.125rem 0;
+}
+.c-section__s2 {
+  height: 18.6875rem; /*corregir y fusionar seccion central con reproductor y hacer lo mismo con las otras*/
+  background: linear-gradient(#314051, #121212 15%);
+}
+.c-section__s2__container1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.125rem;
+  padding: 0.1875rem 0 0.125rem 0.9375rem;
+}
+.c-section__s2__container1 #pauseBtn {
+  width: 2.0625rem;
+  height: 2.0625rem;
+  padding: 0.1875rem;
+  background-color: #1ED760;
+  border-radius: 50%;
+}
+.c-section__s2__container1 p {
+  border: 0.0625rem solid white;
+  padding: 0.375rem;
+  color: white;
+  border-radius: 0.9375rem;
+  font-weight: bold;
+}
+.c-section__s2__container2 h4 {
+  color: white;
+  margin: 0 0 0.1875rem 0.9375rem;
+}
+.c-section__s2__container3 {
+  color: white;
+}
+.c-section__s2__container3 .song {
+  width: 90%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 5% 5% 50% 30% 10%;
+  align-items: center;
+}
+.c-section__s2__container3 .song box-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+.c-section__s2__container3 .song img {
+  width: 1.3125rem;
+  height: 1.3125rem;
+  border-radius: 0.1875rem;
+}
+.c-section__s2__container3 .song p {
+  font-weight: bold;
+  padding-left: 0.375rem;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -152,10 +308,6 @@ main {
   display: grid;
   grid-template-columns: 1fr 50% 1fr;
   height: 90vh;
-}
-
-.c-section {
-  background-color: yellow;
 }
 
 .r-section {
