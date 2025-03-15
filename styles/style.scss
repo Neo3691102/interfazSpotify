@@ -3,6 +3,7 @@
 @import 'base/mixins';
 
 @import 'layout/l-section';
+@import 'layout/c-section';
 
 
 body{
@@ -20,10 +21,7 @@ main{
 
 
 
-.c-section{
-    background-color: yellow;
-   
-}
+
 
 .r-section{
     background-color: green ;

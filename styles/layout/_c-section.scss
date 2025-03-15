@@ -1,0 +1,198 @@
+.c-section{
+    
+    &__s1{
+       
+        
+        &__container1{
+              width: 100%;
+              height: pxArem(300);
+              background-image: url('../assets/img/slipknot3.jpg');
+              background-size: 100% pxArem(300);
+              background-repeat: no-repeat;
+
+            //   @include flexbox(row);
+            //   justify-content: space-between;
+              display: grid;
+              grid-template-columns: 50% 1fr;
+              grid-template-rows:1fr 1fr;
+              
+              
+              
+                .subcontainer1{
+                
+                height: pxArem(27);
+                @include paddingElemLEFTscreen();
+
+                box-icon{
+                    background-color: #4D545A;
+                    border-radius: 50%;
+                    opacity: 0.8;
+                }
+                box-icon:hover{
+                    opacity: 0.9;
+                    cursor: pointer;
+                }
+                }
+
+                .subcontainer2{
+                   
+                    height: pxArem(27);
+                    @include paddingElemRIGHTscreen();
+                    @include flexbox(row);
+                    justify-content: flex-end;
+                    gap: pxArem(9);
+                
+            
+                    &__container1{
+                    @include flexbox(row);
+                    align-items: center;
+                    gap: pxArem(3);
+                    color: white;
+                    @extend %fontSize;
+                    background-color: #4D545A;
+                    border-radius: pxArem(12);
+                    padding: 0 pxArem(10);
+                    opacity: 0.8;
+
+                    box-icon{
+                        width: pxArem(18);
+                        height: pxArem(18);
+                    }
+                    }
+
+                    &__container1:hover{
+                        opacity: 0.9;
+                        color: white;
+                        cursor: pointer;
+                    }
+
+                    &__container2{
+                        @include flexbox(row);
+                        align-items: center;
+                        gap: pxArem(9);
+
+
+                        box-icon{
+                            background-color:#4D545A;
+                            border-radius: 50%;
+                            opacity: 0.8;
+                            border: pxArem(3) solid #4D545A ;
+                            width: pxArem(27);
+                            height: pxArem(27);
+                        }
+
+                        box-icon:hover{
+                            opacity: 0.9;
+                            cursor: pointer;
+                        }
+
+                        img{
+                            width: pxArem(21);
+                            height: pxArem(21);
+                            border-radius: 50%;
+                            
+                            border: pxArem(3) solid #4D545A;
+                        }
+
+                        img:hover{
+                            opacity: 0.9;
+                            cursor: pointer;
+                        }
+                    }
+                }
+
+                
+                .subcontainer3{
+                    color: white;
+                    &__container1{
+                        @include flexbox(row);
+                        align-items: center;
+                        gap: pxArem(3);
+                        font-size: clamp(0.3rem, 1vw, 0.7rem);
+                        @include paddingElemLEFTscreen();
+                    }
+                    h1{
+                        font-size: pxArem(88);
+                        @include paddingElemLEFTscreen();
+                        margin: 0;
+                    }
+                    h5{
+                        @include paddingElemLEFTscreen();
+                        margin: 0 0 pxArem(18) 0;  
+                    }
+                }
+
+                
+                
+            
+        }
+        
+    }
+
+    &__s2{
+        height: pxArem(299); /*corregir y fusionar seccion central con reproductor y hacer lo mismo con las otras*/
+        background: linear-gradient( #314051, #121212 15%);
+       
+        
+        &__container1{
+            @include flexbox(row);
+            align-items: center;
+            gap: pxArem(18);
+            @include paddingElemLEFTscreen();
+            #pauseBtn{
+                width: pxArem(33);
+                height: pxArem(33);
+                padding: pxArem(3);
+                background-color: #1ED760;
+                border-radius: 50%;
+            }
+            p{
+                border: pxArem(1) solid white;
+                padding: pxArem(6);
+                color: white;
+                border-radius: pxArem(15);
+                @extend %fontSize;
+                font-weight: bold;
+            }
+            
+        }
+        
+        &__container2{
+            h4{
+                color: white;
+                margin: 0 0 pxArem(3) pxArem(15);
+            }
+        }
+
+        &__container3{
+            color: white;
+            
+            .song{
+                
+             
+                width: 90%;
+                margin: 0 auto;
+                display: grid;
+                grid-template-columns: 5% 5% 50% 30% 10%;
+                align-items: center;
+                box-icon{
+                    width: pxArem(18);
+                    height: pxArem(18);
+                }
+                img{
+                    width: pxArem(21);
+                    height: pxArem(21);
+                    border-radius: pxArem(3); 
+                }
+                p{
+                    @extend %fontSize;
+                    font-weight: bold;
+                    padding-left: pxArem(6);
+                }
+               
+            }
+            
+        }
+    }
+    
+}
