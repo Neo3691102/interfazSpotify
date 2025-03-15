@@ -135,6 +135,11 @@
   margin-left: 0.9375rem;
   border-radius: 50%;
 }
+.l-section__s2 .artistas .artista:hover {
+  background-color: #232323;
+  border-radius: 0.75rem;
+  cursor: pointer;
+}
 
 body {
   margin: 0;
