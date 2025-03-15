@@ -151,6 +151,12 @@
           border-radius: 50%;
         }
       }
+
+      .artista:hover{
+        background-color: #232323;
+        border-radius: pxArem(12);
+        cursor: pointer;
+      }
     }
 
 
