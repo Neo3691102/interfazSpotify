@@ -1,35 +1,156 @@
-/*ver si es correcto para ruta absoluta*/
-@import '../base/mixins';
+
 
 .l-section{
-    background-color: green;
+    background-color: $main-color;
     @include flexbox(column);
   
   
     &__s1{
       background-color: $secondary-color;
       border-radius: pxArem(12);
-      font-size: clamp(0.7rem, 1vw, 0.7rem);
+      font-size: clamp(0.65rem, 1vw, 0.3rem);
+      font-weight: 600;
       color: white;
-    
-      width: 100%;
+      width: 98%;
+      position: relative;
+      top: 1%;
+      left: 1%;
       @include flexbox(column);
-      gap: 10px;
+      
 
       & div{
-        
         @include flexbox(row);
         justify-content: flex-start;
         align-items: center;
         gap: pxArem(15);
+        padding: pxArem(3) 0 pxArem(2) pxArem(15);
         
       }
 
-    
-    & img{
+      & div:hover{
+        background-color: #232323;
+        border-radius: pxArem(12);
+        cursor: pointer;
+      }
+
+    & box-icon{
         width: 18px;
         height: 18px;
+    }
+  }
+
+  &__s2{
+    background-color: $secondary-color;
+    color: white;
+    width: 98%;
+    
+    border-radius: pxArem(12);
+      position: relative;
+      top: 2%;
+      left: 1%;
+      
+    & div:nth-child(1){
+      @include flexbox(row);
+      justify-content: space-between;
+
+      & div:nth-child(1){
+        @include flexbox(row);
+        align-items: center;
+        gap: pxArem(6);
+        padding: pxArem(3) 0 pxArem(2) pxArem(15);
+        font-size: clamp(0.3rem, 1vw, 0.65rem);
+        font-weight: 600;
+        box-icon {
+          width: 18px;
+          height: 18px;
+        }
+      }
+
+      & div:nth-child(2){
+        @include flexbox(row);
+        align-items: center;
+        padding: pxArem(3) pxArem(15) pxArem(2) pxArem(15);
+
+        #plus-icon:hover{
+          background-color: #232323;
+          border-radius: 50%;
+          cursor: pointer;
+        }
         
+        #arrow-icon:hover{
+          background-color: #232323;
+          border-radius: 50%;
+          cursor: pointer;
+        }
+      }
+
+      
+    }
+
+    &__2ndcontainer{
+      @include flexbox(row);
+      align-items: center;
+      gap: pxArem(6);
+      font-size: clamp(0.3rem, 1vw, 0.65rem);
+      padding-left: pxArem(15); 
+
+      & box-icon{
+        width: pxArem(18);
+        height: pxArem(18);
+      }
+
+      & box-icon:hover{
+        background-color:#232323;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      & p{
+        background-color: white;
+        color: $main-color;
+        font-weight: 600;
+        padding: pxArem(3) pxArem(6);
+        border-radius: pxArem(12);
+      }
+    }
+
+    &__3rdcontainer{
+      @include flexbox(row);
+      align-items: center;
+      justify-content: space-between;
+      padding-left: pxArem(15);
+      font-size: clamp(0.3rem, 1vw, 0.65rem);
+
+      & box-icon{
+        width: pxArem(15);
+        height: pxArem(15);
+      }
+
+      & div{
+        @include flexbox(row);
+        align-items: center;
+        gap: pxArem(6);
+        @include paddingElemRIGHTscreen();
+      }
+    }
+
+    .artistas{
+      
+      .artista{
+        @include flexbox(row);
+        align-items: center;
+        justify-content: flex-start;
+        gap: pxArem(15);
+        font-size: clamp(0.3rem, 1vw, 0.65rem);
+        font-weight: 600;
+        padding: pxArem(1);
+        & img{
+          width: pxArem(26);
+          height: pxArem(26);
+          margin-left: pxArem(15);
+          border-radius: 50%;
+        }
+      }
     }
 
 

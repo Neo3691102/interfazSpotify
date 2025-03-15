@@ -2,3 +2,11 @@
     display: flex;
     flex-direction: $direction;
 }
+
+@mixin paddingElemLEFTscreen(){
+    padding: pxArem(3) 0 pxArem(2) pxArem(15);
+}
+
+@mixin paddingElemRIGHTscreen(){
+    padding: pxArem(3) pxArem(15) pxArem(2) pxArem(15);
+}
