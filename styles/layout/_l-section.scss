@@ -3,8 +3,8 @@
 .l-section{
     background-color: $main-color;
     @include flexbox(column);
-  
-  
+    
+    height: 100%;
     &__s1{
       background-color: $secondary-color;
       border-radius: pxArem(12);
@@ -41,9 +41,10 @@
 
   &__s2{
     background-color: $secondary-color;
+   
     color: white;
     width: 98%;
-    
+    /*height: 76vh; MODIFICAR AQUI PARA FUSIONAR CON NOMBRE DE LA CANCION Y ARTISTA*/
     border-radius: pxArem(12);
       position: relative;
       top: 2%;
@@ -120,7 +121,7 @@
       justify-content: space-between;
       padding-left: pxArem(15);
       font-size: clamp(0.3rem, 1vw, 0.65rem);
-
+      
       & box-icon{
         width: pxArem(15);
         height: pxArem(15);
@@ -135,6 +136,7 @@
     }
 
     .artistas{
+      
       
       .artista{
         @include flexbox(row);
