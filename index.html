@@ -277,11 +277,42 @@
     </main>
     <footer>
       <section class="d-section">
-        <div style="background-color: brown">
-          nombre de la cancion y artista
+        
+        <div class="d-section__container1">
+          <img src="assets/img/w&B.jpg" alt="wait & bleed">
+          <div class="d-section__container1__subcontainer">
+            <p id="c1scp1">Wait And Bleed</p>
+            <p id="c1scp2">Slipknot</p>
+          </div>
+          <box-icon color="white" name="heart"></box-icon>
         </div>
-        <div style="background-color: rgb(42, 151, 165)">reproductor</div>
-        <div style="background-color: brown">iconos</div>
+        <div class="d-section__container2">
+          <div class="d-section__container2__subcontainer1">
+            <box-icon color="white" name='shuffle'></box-icon>
+            <box-icon id="previous" color="white" name='skip-previous'></box-icon>
+            <box-icon id="pausebutton" name='pause'></box-icon>
+            <box-icon id="next" color="white" name='skip-next'></box-icon>
+            <box-icon color="white" name='repeat'></box-icon>
+          </div>
+
+          <div class="d-section__container2__subcontainer2">
+            <p id="current">0:21</p>
+            <div id="progress-bar">
+              <div id="currentprogress"></div>
+            </div>
+            <p id="total">2:27</p>
+          </div>
+        </div>
+        <div class="d-section__container3">
+          <box-icon color="#1ED760" name='play-circle'></box-icon>
+          <box-icon color="white" name='podcast'></box-icon>
+          <box-icon color="white" type='solid' name='playlist'></box-icon>
+          <box-icon color="white" name='speaker'></box-icon>
+          <box-icon color="white" type='solid' name='volume-full'></box-icon>
+          <div id="volumebar"></div>
+          <box-icon color="white" name='cast'></box-icon>
+          <box-icon color="white" name='expand'></box-icon>
+        </div>
       </section>
     </footer>
 
