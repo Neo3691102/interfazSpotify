@@ -1,3 +1,7 @@
+%fontSize{
+    font-size: clamp(0.3rem, 1vw, 0.65rem);
+}
+
 @mixin flexbox($direction){
     display: flex;
     flex-direction: $direction;
