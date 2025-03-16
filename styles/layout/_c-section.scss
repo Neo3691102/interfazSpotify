@@ -1,5 +1,6 @@
 .c-section{
-    
+    height: 100%;
+    overflow: hidden;
     &__s1{
        
         
@@ -130,7 +131,7 @@
     }
 
     &__s2{
-        height: pxArem(299); /*corregir y fusionar seccion central con reproductor y hacer lo mismo con las otras*/
+        height: pxArem(300); /*corregir y fusionar seccion central con reproductor y hacer lo mismo con las otras*/
         background: linear-gradient( #314051, #121212 15%);
        
         
@@ -189,7 +190,15 @@
                     font-weight: bold;
                     padding-left: pxArem(6);
                 }
-               
+               &__container{
+                @include flexbox(row);
+                align-items: center;
+                justify-content: space-between;
+                box-icon{
+                    margin-right: pxArem(9);
+                    padding: pxArem(1);
+                }
+               }
             }
             
         }
