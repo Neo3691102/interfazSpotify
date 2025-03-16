@@ -150,7 +150,21 @@
           margin-left: pxArem(15);
           border-radius: 50%;
         }
+        
+        
       }
+
+      .artista:nth-child(6){
+        background-color: #232323;
+        border-radius: pxArem(6);
+        box-icon[name='volume-full']{
+          margin-left: pxArem(180);
+          width: pxArem(18);
+          height: pxArem(18);
+        }
+      }
+
+      
 
       .artista:hover{
         background-color: #232323;

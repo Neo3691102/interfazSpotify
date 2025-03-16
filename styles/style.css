@@ -135,6 +135,15 @@
   margin-left: 0.9375rem;
   border-radius: 50%;
 }
+.l-section__s2 .artistas .artista:nth-child(6) {
+  background-color: #232323;
+  border-radius: 0.375rem;
+}
+.l-section__s2 .artistas .artista:nth-child(6) box-icon[name=volume-full] {
+  margin-left: 11.25rem;
+  width: 1.125rem;
+  height: 1.125rem;
+}
 .l-section__s2 .artistas .artista:hover {
   background-color: #232323;
   border-radius: 0.75rem;
