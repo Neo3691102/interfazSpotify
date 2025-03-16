@@ -1,0 +1,131 @@
+.d-section{
+    background-color: $main-color;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;;
+
+    &__container1{
+        @include flexbox(row);
+        align-items: center;
+        img{
+            position: relative;
+            left: pxArem(18);
+            width: pxArem(27);
+            height: pxArem(27);
+        }
+        &__subcontainer{
+            color: white;
+            @include flexbox(column);
+            
+            #c1scp1{
+                font-size: clamp(0.3rem, 1vw, 0.7rem);
+                font-weight: 600;
+                position: relative;
+                top: pxArem(9);
+                left: pxArem(33);
+            }
+            #c1scp2{
+                font-size: clamp(0.3rem, 1vw, 0.55rem);
+                position: relative;
+                left: pxArem(33);
+                bottom: pxArem(9);
+                
+            }
+            
+        }
+        box-icon{
+            width: pxArem(15);
+            position: relative;
+            left: pxArem(45);
+        }
+    }
+
+    &__container2{
+        &__subcontainer1{
+            @include flexbox(row);
+            justify-content: center;
+            align-items: center;
+            gap: pxArem(18);
+            padding: pxArem(6);
+            
+            width: 30%;
+            margin: 0 auto;
+
+            box-icon[name="shuffle"]{
+                width: pxArem(15);
+                height: pxArem(15);
+            }
+            
+            #previous{
+                width: pxArem(30);
+                height: pxArem(30);
+            }
+
+            #pausebutton{
+                background-color: white;
+                border-radius: 50%;
+                width: pxArem(27);
+                height: pxArem(27);
+            }
+
+            #next{
+                width: pxArem(30);
+                height: pxArem(30);
+            }
+            box-icon[name="repeat"]{
+                width: pxArem(15);
+                height: pxArem(15);
+            }
+        }
+
+        &__subcontainer2{
+            position: relative;
+            bottom: pxArem(6);
+            
+            width: 80%;
+            height: pxArem(20);
+            margin: 0 auto;
+            @include flexbox(row);
+            justify-content: center;
+            align-items: center;
+            gap: pxArem(6);
+            color: white;
+            #current{
+                @extend %fontSize;
+            }
+            #progress-bar{
+                width: 90%;
+                height: pxArem(3);
+                background-color: #4E4E4E;
+                border-radius: pxArem(3);
+                #currentprogress{
+                    width: 14.28%;
+                    height: pxArem(3);
+                    background-color: white;
+                }
+            }
+            #total{
+                @extend %fontSize;
+            }
+        }
+    }
+
+    &__container3{
+       
+        @include flexbox(row);
+        justify-content: flex-end;
+        align-items: center;
+        gap: pxArem(9);
+        position: relative;
+        right: pxArem(9);
+        box-icon{
+            width: pxArem(18);
+        }
+        #volumebar{
+            width: 30%;
+            height: pxArem(3);
+            background-color: white;
+            border-radius: pxArem(3);
+        }
+    }
+}
