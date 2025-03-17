@@ -4,30 +4,31 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" integrity="sha512-IJEbgDEF7OeKJRa0MY2PApnyJHRIsgzCveek4ec8VWQ+7KG3ZSKVNYa5xP/Gh0hVP0Mwb+gBsk+GwR3JQGhQNg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Document</title>
   </head>
   <body>
     <main>
       <section class="l-section">
         <div class="l-section__s1">
-          <div>
-            <box-icon color="white" name="home-alt-2"></box-icon>
+          <div class="l-section__s1__container1">
+            <box-icon id="homeIcon" color="white" name="home-alt-2"></box-icon>
             <p>Inicio</p>
           </div>
 
-          <div>
-            <box-icon color="white" name="search"></box-icon>
+          <div class="l-section__s1__container2">
+            <box-icon id="searchIcon" color="white" name="search"></box-icon>
             <p>Buscar</p>
           </div>
         </div>
 
         <div class="l-section__s2">
-          <div>
-            <div>
-              <box-icon color="white" name="library"></box-icon>
+          <div class="l-section__s2__1stcontainer">
+            <div id="s2sc1">
+              <box-icon id="library" color="white" name="library"></box-icon>
               <p>Tu biblioteca</p>
             </div>
-            <div>
+            <div id="s2sc2">
               <box-icon id="plus-icon" color="white" name="plus"></box-icon>
               <box-icon
                 id="arrow-icon"
@@ -38,15 +39,15 @@
           </div>
 
           <div class="l-section__s2__2ndcontainer">
-            <box-icon color="white" name="x"></box-icon>
+            <box-icon id="x" color="white" name="x"></box-icon>
             <p>Artistas</p>
           </div>
 
           <div class="l-section__s2__3rdcontainer">
-            <box-icon color="white" name="search"></box-icon>
-            <div>
+            <box-icon id="thirdcsearch" color="white" name="search"></box-icon>
+            <div id="thirdcsc">
               <p>Orden alfabético</p>
-              <box-icon color="white" name="list-ul"></box-icon>
+              <box-icon id="list" color="white" name="list-ul"></box-icon>
             </div>
           </div>
 
@@ -145,24 +146,24 @@
 
             <div class="subcontainer2">
               <div class="subcontainer2__container1">
-                <box-icon color="white" name="download"></box-icon>
-                <p>Instalar app</p>
+                <box-icon id="download" color="white" name="download"></box-icon>
+                <p id="sc2c1p">Instalar app</p>
               </div>
 
               <div class="subcontainer2__container2">
-                <box-icon color="white" name="bell"></box-icon>
+                <box-icon id="bell" color="white" name="bell"></box-icon>
                 <img src="assets/img/maito gai.jpg" alt="profile" />
               </div>
             </div>
 
             <div class="subcontainer3">
               <div class="subcontainer3__container1">
-                <box-icon color="#1E60D7" type="solid" name="badge-check"></box-icon>
-                <p>Artista verificado</p>
+                <box-icon id="badgeCheck" color="#1E60D7" type="solid" name="badge-check"></box-icon>
+                <p id="sc3c1p">Artista verificado</p>
                 
               </div>
-              <h1>Slipknot</h1>
-                <h5>14.1 millones de oyentes mensuales</h5>
+              <h1 id="sc3h1">Slipknot</h1>
+              <h5 id="sc3h5">14.1 millones de oyentes mensuales</h5>
               
             </div>
 
@@ -175,21 +176,21 @@
         <div class="c-section__s2">
           <div class="c-section__s2__container1">
             <box-icon id="pauseBtn" name='pause'></box-icon>
-            <p>Siguiendo</p>
-            <box-icon color="#AAA9A9" name='dots-horizontal-rounded'></box-icon>
+            <p id="s2c1p">Siguiendo</p>
+            <box-icon id="dots" color="#AAA9A9" name='dots-horizontal-rounded'></box-icon>
           </div>
 
           <div class="c-section__s2__container2">
-            <h4>Populares</h4>
+            <h4 id="s2c2h4">Populares</h4>
           </div>
 
           <div class="c-section__s2__container3">
             
             <div class="song">
-              <box-icon color="#1ED760" name='bar-chart'></box-icon>
+              <box-icon id="barchart" color="#1ED760" name='bar-chart'></box-icon>
               <img src="assets/img/solwayF.jpg" alt="solwat firth" />
               <p>Solway Firth</p>
-              <p>77.800.000</p>
+              <p class="reproductions">77.800.000</p>
               <p>5:56</p>
             </div>
 
@@ -197,7 +198,7 @@
               <p>2</p>
               <img src="assets/img/cD.jpg" alt="critical darling" />
               <p>Critical Darling</p>
-              <p>44.900.000</p>
+              <p class="reproductions">44.900.000</p>
               <p>6:25</p>
             </div>
 
@@ -205,7 +206,7 @@
               <p>3</p>
               <img src="assets/img/pS.jpg" alt="Psychosocial" />
               <p>Psychosocial</p>
-              <p>694.000.000</p>
+              <p class="reproductions">694.000.000</p>
               <p>4:43</p>
             </div>
 
@@ -213,7 +214,7 @@
               <p>4</p>
               <img src="assets/img/biF.jpg" alt="before i forget" />
               <p>Before I Forget</p>
-              <p>604.000.000</p>
+              <p class="reproductions">604.000.000</p>
               <p>4:38</p>
             </div>
 
@@ -222,11 +223,12 @@
               <img src="assets/img/w&B.jpg" alt="wait and bleed" />
               <p>Wait And Bleed</p>
               <div class="song__container">
-                <p>512.000.000</p>
-                <box-icon color="#1ED760" type='solid' name='heart'></box-icon>
+                <p class="reproductions">512.000.000</p>
+                <box-icon id="songheart" color="#1ED760" type='solid' name='heart'></box-icon>
+                <p>2:27</p>
               </div>
               
-              <p>2:27</p>
+              
             </div>
 
           </div>

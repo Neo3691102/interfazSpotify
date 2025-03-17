@@ -1,5 +1,5 @@
 %fontSize{
-    font-size: clamp(0.3rem, 1vw, 0.65rem);
+    font-size: clamp(0.65rem, 1vw, 0.7rem);
 }
 
 @mixin flexbox($direction){
@@ -13,4 +13,24 @@
 
 @mixin paddingElemRIGHTscreen(){
     padding: pxArem(3) pxArem(15) pxArem(2) pxArem(15);
+}
+
+@mixin movilS(){
+    @media screen and (max-width: pxArem(320)){ @content };
+}
+
+@mixin movilM(){
+    @media screen and (min-width: pxArem(321)) and (max-width: pxArem(375)){ @content };
+}
+
+@mixin movilL(){
+    @media screen and (min-width: pxArem(376)) and (max-width: pxArem(425)){ @content };
+}
+
+@mixin tablet(){
+    @media screen and (min-width: pxArem(426)) and (max-width: pxArem(768)){ @content };
+}
+
+@mixin laptop1024(){
+    @media screen and (min-width: pxArem(769)) and (max-width: pxArem(1024)){ @content };
 }

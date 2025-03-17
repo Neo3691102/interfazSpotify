@@ -10,9 +10,6 @@
               background-image: url('../assets/img/slipknot3.jpg');
               background-size: 100% pxArem(300);
               background-repeat: no-repeat;
-
-            //   @include flexbox(row);
-            //   justify-content: space-between;
               display: grid;
               grid-template-columns: 50% 1fr;
               grid-template-rows:1fr 1fr;
@@ -21,17 +18,41 @@
               
                 .subcontainer1{
                 
-                height: pxArem(27);
+                
                 @include paddingElemLEFTscreen();
 
-                box-icon{
+                box-icon[name="chevron-left"]{
                     background-color: #4D545A;
                     border-radius: 50%;
                     opacity: 0.8;
+                    @include movilS(){
+                        width: pxArem(20);
+                        height: pxArem(20);
+                    }
                 }
-                box-icon:hover{
+                box-icon[name="chevron-left"]:hover{
                     opacity: 0.9;
                     cursor: pointer;
+                }
+                box-icon[name="chevron-right"]{
+                    background-color: #4D545A;
+                    border-radius: 50%;
+                    opacity: 0.8;
+                    @include movilS(){
+                        width: pxArem(20);
+                        height: pxArem(20);
+                        
+                    }
+                }
+                box-icon[name="chevron-right"]:hover{
+                    opacity: 0.9;
+                    cursor: pointer;
+                }
+                @include movilS(){
+                    padding: 0;
+                    position: relative;
+                    top: pxArem(4);
+                    left: pxArem(3);
                 }
                 }
 
@@ -55,9 +76,26 @@
                     padding: 0 pxArem(10);
                     opacity: 0.8;
 
-                    box-icon{
+                    #download{
                         width: pxArem(18);
                         height: pxArem(18);
+                        @include movilS(){
+                            width: pxArem(15);
+                            height: pxArem(15);
+                        }
+                    }
+
+                    #sc2c1p{
+                        @include movilS(){
+                            display: none;
+                        }
+                    }
+                    @include movilS(){
+                        font-size: 0.48rem;
+                        padding: 0;
+                        border-radius: 50%;
+                        background-color: transparent;
+                        
                     }
                     }
 
@@ -73,16 +111,22 @@
                         gap: pxArem(9);
 
 
-                        box-icon{
+                        #bell{
                             background-color:#4D545A;
                             border-radius: 50%;
                             opacity: 0.8;
                             border: pxArem(3) solid #4D545A ;
                             width: pxArem(27);
                             height: pxArem(27);
+                            @include movilS(){
+                                width: pxArem(15);
+                                height: pxArem(15);
+                                background-color: transparent;
+                                border: none;
+                            }
                         }
 
-                        box-icon:hover{
+                        #bell:hover{
                             opacity: 0.9;
                             cursor: pointer;
                         }
@@ -93,12 +137,20 @@
                             border-radius: 50%;
                             
                             border: pxArem(3) solid #4D545A;
+                            @include movilS(){
+                                border: none;
+                            }
                         }
 
                         img:hover{
                             opacity: 0.9;
                             cursor: pointer;
                         }
+                    }
+                    @include movilS(){
+                        padding: 0;
+                        gap: 0;
+                        justify-content: space-around;
                     }
                 }
 
@@ -111,19 +163,42 @@
                         gap: pxArem(3);
                         font-size: clamp(0.3rem, 1vw, 0.7rem);
                         @include paddingElemLEFTscreen();
+                        #badgeCheck{
+                            @include movilS(){
+                                width: pxArem(15);
+                                height: pxArem(15);
+                            }
+                        }
+                        #sc3c1p{
+                            @include movilS(){
+                                font-size: 0.6rem;
+                            }
+                        }
+                        @include movilS(){
+                            position: relative;
+                            top: pxArem(6)
+                        }
                     }
-                    h1{
+                    #sc3h1{
                         font-size: pxArem(88);
                         @include paddingElemLEFTscreen();
                         margin: 0;
+                        @include movilS(){
+                            font-size: 2.4rem;
+                        }
                     }
-                    h5{
+                    #sc3h5{
                         @include paddingElemLEFTscreen();
-                        margin: 0 0 pxArem(18) 0;  
+                        margin: 0 0 pxArem(18) 0;
+                        @include movilS(){
+                            font-size: 0.63rem;
+                        }  
                     }
                 }
 
-                
+              @include movilS(){
+                height: pxArem(191.39);
+              }  
                 
             
         }
@@ -146,8 +221,12 @@
                 padding: pxArem(3);
                 background-color: #1ED760;
                 border-radius: 50%;
+                @include movilS(){
+                    width: pxArem(24);
+                    height: pxArem(24);
+                }
             }
-            p{
+            #s2c1p{
                 border: pxArem(1) solid white;
                 padding: pxArem(6);
                 color: white;
@@ -155,13 +234,23 @@
                 @extend %fontSize;
                 font-weight: bold;
             }
+            @include movilS(){
+                position: relative;
+                top: pxArem(6);
+                justify-content: space-around;
+            }
             
         }
         
         &__container2{
-            h4{
+            #s2c2h4{
                 color: white;
                 margin: pxArem(12) 0 pxArem(15) pxArem(15);
+                @include movilS(){
+                    margin: pxArem(15) 0 pxArem(9) pxArem(15);
+                    font-size: 0.7rem;
+                    font-weight: bold;
+                }
             }
         }
 
@@ -176,7 +265,7 @@
                 display: grid;
                 grid-template-columns: 5% 5% 50% 30% 10%;
                 align-items: center;
-                box-icon{
+                #barchart{
                     width: pxArem(18);
                     height: pxArem(18);
                 }
@@ -189,15 +278,36 @@
                     @extend %fontSize;
                     font-weight: bold;
                     padding-left: pxArem(6);
+                    
+                }
+                .reproductions{
+                    @include movilS(){
+                        display: none;
+                    }
                 }
                &__container{
                 @include flexbox(row);
                 align-items: center;
                 justify-content: space-between;
-                box-icon{
+                #songheart{
                     margin-right: pxArem(9);
                     padding: pxArem(1);
+                    @include movilS(){
+                        margin: 0;
+                        padding: 0;
+                        width: pxArem(15);
+                    }
                 }
+                @include movilS(){
+                    flex-direction: row-reverse;
+                    width: 100%;
+                    
+                }
+               }
+               @include movilS(){
+                grid-template-columns: 10% 10% 50% 25% 5%;
+                column-gap: pxArem(3);
+                padding: pxArem(3);
                }
             }
             
