@@ -3,89 +3,110 @@
 .l-section{
     background-color: $main-color;
     @include flexbox(column);
-    
     height: 100%;
     &__s1{
       background-color: $secondary-color;
       border-radius: pxArem(12);
-      font-size: clamp(0.65rem, 1vw, 0.3rem);
+      font-size: clamp(0.65rem, 1vw, 0.7rem);
       font-weight: 600;
       color: white;
-      width: 98%;
-      position: relative;
-      top: 1%;
-      left: 1%;
+      width: 97%;
+      margin: 0 auto;
+      padding: pxArem(12);
       @include flexbox(column);
       
 
-      & div{
+      &__container1{
         @include flexbox(row);
         justify-content: flex-start;
         align-items: center;
         gap: pxArem(15);
         padding: pxArem(3) 0 pxArem(2) pxArem(15);
-        
+        #homeIcon{
+          width: pxArem(18);
+        }
+        @include movilS(){
+          gap: pxArem(9);
+        }
+      }
+      &__container2{
+        @include flexbox(row);
+        justify-content: flex-start;
+        align-items: center;
+        gap: pxArem(15);
+        padding: pxArem(3) 0 pxArem(2) pxArem(15);
+        #searchIcon{
+          width: pxArem(18);
+        }
+        @include movilS(){
+          gap: pxArem(9);
+        }
       }
 
-      & div:hover{
-        background-color: #232323;
-        border-radius: pxArem(12);
-        cursor: pointer;
+      @include movilS(){
+        padding: pxArem(3);
       }
-
-    & box-icon{
-        width: 18px;
-        height: 18px;
     }
-  }
 
   &__s2{
     background-color: $secondary-color;
-   
     color: white;
     width: 98%;
     /*height: 76vh; MODIFICAR AQUI PARA FUSIONAR CON NOMBRE DE LA CANCION Y ARTISTA*/
     border-radius: pxArem(12);
-      position: relative;
-      top: 2%;
-      left: 1%;
       
-    & div:nth-child(1){
+    &__1stcontainer{
       @include flexbox(row);
       justify-content: space-between;
 
-      & div:nth-child(1){
+      #s2sc1{
         @include flexbox(row);
         align-items: center;
         gap: pxArem(6);
         padding: pxArem(3) 0 pxArem(2) pxArem(15);
-        font-size: clamp(0.3rem, 1vw, 0.65rem);
+        @extend %fontSize;
         font-weight: 600;
-        box-icon {
+        #library {
           width: 18px;
           height: 18px;
         }
+        @include movilS(){
+          padding: 0 0 0 pxArem(6);
+          font-size: 0.5rem;
+        }
       }
 
-      & div:nth-child(2){
+      #s2sc2{
         @include flexbox(row);
         align-items: center;
         padding: pxArem(3) pxArem(15) pxArem(2) pxArem(15);
 
+        #plus-icon{
+          width: pxArem(18);
+        }
         #plus-icon:hover{
           background-color: #232323;
           border-radius: 50%;
           cursor: pointer;
         }
-        
+        #arrow-icon{
+          width: pxArem(18);
+        }
         #arrow-icon:hover{
           background-color: #232323;
           border-radius: 50%;
           cursor: pointer;
         }
+        @include movilS(){
+          padding: 0 pxArem(6) 0 0;
+        
+        }
       }
 
-      
+      @include movilS(){
+        padding: pxArem(6) 0 0 0;
+        gap: pxArem(3);
+      }
     }
 
     &__2ndcontainer{
@@ -95,12 +116,12 @@
       font-size: clamp(0.3rem, 1vw, 0.65rem);
       padding-left: pxArem(15); 
 
-      & box-icon{
+      #x{
         width: pxArem(18);
         height: pxArem(18);
       }
 
-      & box-icon:hover{
+      #x:hover{
         background-color:#232323;
         border-radius: 50%;
         cursor: pointer;
@@ -112,6 +133,12 @@
         font-weight: 600;
         padding: pxArem(3) pxArem(6);
         border-radius: pxArem(12);
+        @include movilS(){
+          font-size: 0.47rem;
+        }
+      }
+      @include movilS(){
+        padding: 0 0 0 pxArem(3);
       }
     }
 
@@ -122,16 +149,32 @@
       padding-left: pxArem(15);
       font-size: clamp(0.3rem, 1vw, 0.65rem);
       
-      & box-icon{
+      #thirdcsearch{
         width: pxArem(15);
         height: pxArem(15);
+        @include movilS(){
+          position: relative;
+          left: pxArem(6)
+        }
       }
 
-      & div{
+      #thirdcsc{
+        
         @include flexbox(row);
         align-items: center;
         gap: pxArem(6);
         @include paddingElemRIGHTscreen();
+        #list{
+          width: pxArem(18);
+        }
+        @include movilS(){
+          padding: 0;
+          gap: pxArem(3);
+        }
+      }
+      @include movilS(){
+        padding: 0;
+        font-size: 0.45rem;
       }
     }
 
@@ -143,17 +186,26 @@
         align-items: center;
         justify-content: flex-start;
         gap: pxArem(15);
-        font-size: clamp(0.3rem, 1vw, 0.65rem);
+        @extend %fontSize;
         font-weight: 600;
-        padding: pxArem(1);
+        padding: pxArem(3);
         & img{
           width: pxArem(26);
           height: pxArem(26);
           margin-left: pxArem(15);
           border-radius: 50%;
+          @include movilS(){
+            width: pxArem(15);
+            height: pxArem(15);
+            margin-left: pxArem(6);
+          }
         }
         
-        
+        @include movilS(){
+          padding: pxArem(1.5) 0;
+          gap: pxArem(10);
+          font-size: 0.48rem;
+        }
       }
 
       .artista:nth-child(6){
@@ -175,7 +227,8 @@
       }
     }
 
-
+    
   }
+  
 }
 

@@ -7,18 +7,22 @@
 @import 'layout/r-section';
 @import 'layout/d-section';
 
-
-body{
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: $font-family;  
 }
 
+
 main{
     display: grid;
     grid-template-columns: 1fr 50% 1fr;
     height: 90vh;
+    @include movilS(){
+        grid-template-columns: 35% 65%;
+        
+    }
 }
 
 
