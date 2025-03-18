@@ -21,6 +21,7 @@ main{
     height: 90vh;
     @include movilS(){
         grid-template-columns: 35% 65%;
+        grid-template-rows: 1fr 1fr;
         
     }
 }

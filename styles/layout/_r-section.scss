@@ -10,13 +10,14 @@
         border-radius: pxArem(3);
         &__container1{
             .c1__subcontainer{
+                padding: pxArem(6) 0 pxArem(9) 0;
                 @include flexbox(row);
                 align-items: center;
                 justify-content: space-between;
                 color: white;
                 @extend %fontSize;
                 p{
-                    @include paddingElemLEFTscreen;
+                    padding: 0 0 0 pxArem(12);
                     font-weight: 600;
                 }
                 box-icon{
@@ -28,8 +29,9 @@
             img{
                 display: block;
                 width: 95%;
-                height: pxArem(227);
+                height: pxArem(180);
                 margin: 0 auto;
+                object-fit: cover;
             }
         }
 
@@ -39,29 +41,25 @@
                 align-items: center;
                 justify-content: space-between;
                 color: white;
+                padding: pxArem(15) 0 pxArem(15) pxArem(12);
                 
                 &__group1{
                     @include flexbox(column);
                     align-items: flex-start;
+                    
                     & p:first-child{
-                        font-size: clamp(0.65rem, 1.5vw, 1.5rem);
+                        font-size: clamp(0.8rem, 1.5vw, 1.5rem);
                         font-weight: 600;
-                        position: relative;
-                        left: pxArem(10);
-                        bottom: pxArem(10);
+                        
                     }
                     & p:last-child{
-                        font-size: clamp(0.3rem, 1vw, 0.8rem);
-                        position: relative;
-                        left: pxArem(10);
-                        bottom: pxArem(40);
+                        font-size: clamp(0.6rem, 1vw, 0.8rem);
+                       
                     }
                 }
 
                 &__group2{
-                    position: relative;
-                    right: pxArem(10);
-                    bottom: pxArem(20);
+                    padding: 0 pxArem(9) 0 0;
                     box-icon{
                         width: pxArem(18);
                         height: pxArem(18);
@@ -75,9 +73,9 @@
     &__s2{
         background-color: $secondary-color;
         width: 97%;
+        height: 44.4vh; /*CAMBIAR A MEDIDA REAL EN REM*/
         margin: 0 auto;
-        position: relative;
-        bottom: 7%;
+        
         
         &__container1{
             width: 95%;
@@ -85,39 +83,54 @@
             @extend %fontSize;
             color: white;
             .c1__subcontainer1{
-                border-radius: pxArem(3);
-                background-color: red;
+                border-radius: pxArem(12);
+                
                 width: 100%;
-                height: pxArem(100);/*CAMBIAR*/
+                height: pxArem(120);/*CAMBIAR*/
                 background-image: url('../assets/img/members.jpg');
                 background-size: cover;
                 @extend %fontSize;
                 p{
                     color: white;
                     font-weight: 600;
-                    padding: pxArem(12) 0 0 pxArem(12);
+                    padding: pxArem(21) 0 0 pxArem(15);
                 }
             }   
 
              .c1__subcontainer2{
+                background-color: #242424;
+                border-bottom-left-radius: pxArem(6) ;
+                border-bottom-right-radius: pxArem(6);
                 #sc2p1{
+                    padding: pxArem(12) 0 pxArem(12) pxArem(12);
                     font-weight: 600;
+                    @include movilS(){
+                        padding: pxArem(6) 0 0 pxArem(12);
+                    }
                 }
                 &__group1{
-                    position: relative;
-                    bottom: pxArem(15);
+                    padding: 0 0 pxArem(12) pxArem(12);
                     @include flexbox(row);
                     align-items: center;
                     justify-content: space-between;
+                    #sc2g1p1{
+                        color: #939393;
+                    }
                     #sc2g1p2{
-                        border: pxArem(1) solid white;
+                        position: relative;
+                        right: pxArem(9);
+                        border: pxArem(1) solid #939393;
                         padding: pxArem(5);
                         border-radius: pxArem(9);
                     }
+                    @include movilS(){
+                        padding: 0 0 pxArem(6) pxArem(12);
+                    }
                 }
                 #sc2p2{
-                    position: relative;
-                    bottom: pxArem(27)
+                    padding: 0 0 pxArem(9) pxArem(12);
+                    font-size: 0.65rem;
+                    color: #939393;
                 }
              }
         }
@@ -125,6 +138,10 @@
        
     }
     @include movilS(){
-        display: none;
-    }
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        height: pxArem(623.42);
+     }
 }

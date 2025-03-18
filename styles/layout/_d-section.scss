@@ -1,42 +1,56 @@
 .d-section{
     background-color: $main-color;
-    height: 10vh;
+ 
+   
     display: grid;
     grid-template-columns: 1fr 50% 1fr;;
 
     &__container1{
         @include flexbox(row);
+        justify-content: center;
         align-items: center;
+        padding: 0 0 0 pxArem(27);
+        gap: pxArem(18);
         img{
-            position: relative;
-            left: pxArem(18);
+           
             width: pxArem(27);
             height: pxArem(27);
+            @include movilS(){
+                width: pxArem(33);
+                height: pxArem(33);
+             }
         }
         &__subcontainer{
             color: white;
             @include flexbox(column);
-            
+            width: 100%;
             #c1scp1{
-                font-size: clamp(0.3rem, 1vw, 0.7rem);
-                font-weight: 600;
-                position: relative;
-                top: pxArem(9);
-                left: pxArem(33);
+                
+                font-size: clamp(0.7rem, 1vw, 0.8rem);
+
             }
             #c1scp2{
-                font-size: clamp(0.3rem, 1vw, 0.55rem);
-                position: relative;
-                left: pxArem(33);
-                bottom: pxArem(9);
+                font-size: clamp(0.5rem, 1vw, 0.6rem);
+                
+                
                 
             }
-            
+            @include movilS(){
+                width: 100%;
+            }
         }
         box-icon{
             width: pxArem(15);
-            position: relative;
-            left: pxArem(45);
+            @include movilS(){
+                width: pxArem(21);
+                margin-right: pxArem(15);
+            }
+        }
+        @include movilS(){
+            
+            
+            padding: 0 0 0 pxArem(15);
+            gap: pxArem(9);
         }
     }
 
@@ -76,6 +90,12 @@
                 width: pxArem(15);
                 height: pxArem(15);
             }
+            @include movilS(){
+                
+                width: 100%;
+         
+                padding: 0;
+            }
         }
 
         &__subcontainer2{
@@ -107,6 +127,12 @@
             #total{
                 @extend %fontSize;
             }
+            @include movilS(){
+                
+                bottom: 0;
+                width: 100%;
+                padding: 0 pxArem(9);
+            }
         }
     }
 
@@ -127,5 +153,20 @@
             background-color: white;
             border-radius: pxArem(3);
         }
+        @include movilS(){
+            
+            @include flexbox(row);
+            justify-content: center;
+            padding: 0;
+            right: 0;
+            
+        }
+    }
+    @include movilS(){
+        @include flexbox(column);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        
     }
 }
