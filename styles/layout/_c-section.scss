@@ -1,12 +1,13 @@
 .c-section{
     height: 100%;
-    overflow: hidden;
+   
     &__s1{
-       
-    
+        background-color: $main-color;
+        
         &__container1{
               width: 100%;
               height: pxArem(270);
+              border-radius: pxArem(9);
               background-image: url('../assets/img/slipknot3.jpg');
               background-size: 100% pxArem(300);
               background-repeat: no-repeat;
@@ -213,8 +214,9 @@
         &__container1{
             @include flexbox(row);
             align-items: center;
-            gap: pxArem(18);
+            gap: pxArem(39);
             @include paddingElemLEFTscreen();
+            padding: pxArem(15) 0 0 pxArem(18);
             #pauseBtn{
                 width: pxArem(33);
                 height: pxArem(33);
@@ -228,16 +230,21 @@
             }
             #s2c1p{
                 border: pxArem(1) solid white;
-                padding: pxArem(6);
+                padding: pxArem(9);
                 color: white;
                 border-radius: pxArem(15);
                 @extend %fontSize;
                 font-weight: bold;
+                @include movilS(){
+                    padding: pxArem(6);
+                }
             }
             @include movilS(){
                 position: relative;
                 top: pxArem(6);
                 justify-content: space-around;
+                gap: pxArem(6);
+                padding: 0;
             }
             
         }
@@ -245,7 +252,8 @@
         &__container2{
             #s2c2h4{
                 color: white;
-                margin: pxArem(12) 0 pxArem(15) pxArem(15);
+                margin: pxArem(21) 0 pxArem(18) pxArem(21);
+                font-weight: 600;
                 @include movilS(){
                     margin: pxArem(15) 0 pxArem(9) pxArem(15);
                     font-size: 0.7rem;
@@ -265,6 +273,7 @@
                 display: grid;
                 grid-template-columns: 5% 5% 50% 30% 10%;
                 align-items: center;
+                padding: pxArem(6);
                 #barchart{
                     width: pxArem(18);
                     height: pxArem(18);
@@ -289,25 +298,32 @@
                 @include flexbox(row);
                 align-items: center;
                 justify-content: space-between;
+                position: relative;
+                right: pxArem(33);
                 #songheart{
                     margin-right: pxArem(9);
                     padding: pxArem(1);
+                  
+                    width: pxArem(18);
                     @include movilS(){
                         margin: 0;
                         padding: 0;
                         width: pxArem(15);
                     }
                 }
+            
+               
                 @include movilS(){
                     flex-direction: row-reverse;
                     width: 100%;
-                    
+                    right: 0;
                 }
                }
                @include movilS(){
                 grid-template-columns: 10% 10% 50% 25% 5%;
                 column-gap: pxArem(3);
                 padding: pxArem(3);
+                
                }
             }
             
