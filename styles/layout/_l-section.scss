@@ -24,8 +24,21 @@
         padding: pxArem(3) 0 pxArem(2) pxArem(15);
         #homeIcon{
           width: pxArem(18);
+          color: white;
         }
         @include movilS(){
+          gap: pxArem(9);
+        }
+        @include movilM(){
+          gap: pxArem(9);
+        }
+        @include movilL(){
+          gap: pxArem(9);
+        }
+        @include tablet(){
+          gap: pxArem(9);
+        }
+        @include laptop1024(){
           gap: pxArem(9);
         }
       }
@@ -41,9 +54,33 @@
         @include movilS(){
           gap: pxArem(9);
         }
+        @include movilM(){
+          gap: pxArem(9);
+        }
+        @include movilL(){
+          gap: pxArem(9);
+        }
+        @include tablet(){
+          gap: pxArem(9);
+        }
+        @include laptop1024(){
+          gap: pxArem(9);
+        }
       }
 
       @include movilS(){
+        padding: pxArem(3);
+      }
+      @include movilM(){
+        padding: pxArem(3);
+      }
+      @include movilL(){
+        padding: pxArem(3);
+      }
+      @include tablet(){
+        padding: pxArem(3);
+      }
+      @include laptop1024(){
         padding: pxArem(3);
       }
     }
@@ -75,6 +112,22 @@
           height: 18px;
         }
         @include movilS(){
+          padding: 0 0 0 pxArem(6);
+          font-size: 0.5rem;
+        }
+        @include movilM(){
+          padding: 0 0 0 pxArem(6);
+          font-size: 0.5rem;
+        }
+        @include movilL(){
+          padding: 0 0 0 pxArem(6);
+          font-size: 0.5rem;
+        }
+        @include tablet(){
+          padding: 0 0 0 pxArem(6);
+          font-size: 0.5rem;
+        }
+        @include laptop1024(){
           padding: 0 0 0 pxArem(6);
           font-size: 0.5rem;
         }
@@ -111,6 +164,23 @@
         padding: pxArem(6) 0 0 0;
         gap: pxArem(3);
       }
+
+      @include movilM(){
+        padding: pxArem(6) 0 0 0;
+        gap: pxArem(3);
+      }
+      @include movilL(){
+        padding: pxArem(6) 0 0 0;
+        gap: pxArem(3);
+      }
+      @include tablet(){
+        padding: pxArem(6) 0 0 0;
+        gap: pxArem(3);
+      }
+      @include laptop1024(){
+        padding: pxArem(6) 0 0 0;
+        gap: pxArem(3);
+      }
     }
 
     &__2ndcontainer{
@@ -143,8 +213,36 @@
           font-size: 0.47rem;
           padding: pxArem(3) pxArem(6);
         }
+        @include movilM(){
+          font-size: 0.47rem;
+          padding: pxArem(3) pxArem(6);
+        }
+        @include movilL(){
+          font-size: 0.47rem;
+          padding: pxArem(3) pxArem(6);
+        }
+        @include tablet(){
+          font-size: 0.47rem;
+          padding: pxArem(3) pxArem(6);
+        }
+        @include laptop1024(){
+          font-size: 0.47rem;
+          padding: pxArem(3) pxArem(6);
+        }
       }
       @include movilS(){
+        padding: 0 0 0 pxArem(3);
+      }
+      @include movilM(){
+        padding: 0 0 0 pxArem(3);
+      }
+      @include movilL(){
+        padding: 0 0 0 pxArem(3);
+      }
+      @include tablet(){
+        padding: 0 0 0 pxArem(3);
+      }
+      @include laptop1024(){
         padding: 0 0 0 pxArem(3);
       }
     }
@@ -163,6 +261,22 @@
           position: relative;
           left: pxArem(6)
         }
+        @include movilM(){
+          position: relative;
+          left: pxArem(6)
+        }
+        @include movilL(){
+          position: relative;
+          left: pxArem(6)
+        }
+        @include tablet(){
+          position: relative;
+          left: pxArem(6)
+        }
+        @include laptop1024(){
+          position: relative;
+          left: pxArem(6)
+        }
       }
 
       #thirdcsc{
@@ -178,8 +292,40 @@
           padding: 0;
           gap: pxArem(3);
         }
+        @include movilM(){
+          padding: 0;
+          gap: pxArem(3);
+        }
+        @include movilL(){
+          padding: 0;
+          gap: pxArem(3);
+        }
+        @include tablet(){
+          padding: 0;
+          gap: pxArem(3);
+        }
+        @include laptop1024(){
+          padding: 0;
+          gap: pxArem(3);
+        }
       }
       @include movilS(){
+        padding: 0;
+        font-size: 0.45rem;
+      }
+      @include movilM(){
+        padding: 0;
+        font-size: 0.45rem;
+      }
+      @include movilL(){
+        padding: 0;
+        font-size: 0.45rem;
+      }
+      @include tablet(){
+        padding: 0;
+        font-size: 0.45rem;
+      }
+      @include laptop1024(){
         padding: 0;
         font-size: 0.45rem;
       }
@@ -206,9 +352,53 @@
             height: pxArem(18);
             margin-left: pxArem(6);
           }
+          @include movilM(){
+            width: pxArem(18);
+            height: pxArem(18);
+            margin-left: pxArem(6);
+          }
+          @include movilL(){
+            width: pxArem(18);
+            height: pxArem(18);
+            margin-left: pxArem(6);
+          }
+          @include tablet(){
+            width: pxArem(18);
+            height: pxArem(18);
+            margin-left: pxArem(6);
+          }
+          @include laptop1024(){
+            width: pxArem(18);
+            height: pxArem(18);
+            margin-left: pxArem(6);
+          }
         }
         
         @include movilS(){
+          
+          padding: pxArem(4.8) 0;
+          gap: pxArem(10);
+          font-size: 0.48rem;
+        }
+        @include movilM(){
+          
+          padding: pxArem(4.8) 0;
+          gap: pxArem(10);
+          font-size: 0.48rem;
+        }
+        @include movilL(){
+          
+          padding: pxArem(4.8) 0;
+          gap: pxArem(10);
+          font-size: 0.48rem;
+        }
+        @include tablet(){
+          
+          padding: pxArem(4.8) 0;
+          gap: pxArem(10);
+          font-size: 0.48rem;
+        }
+        @include laptop1024(){
           
           padding: pxArem(4.8) 0;
           gap: pxArem(10);
@@ -219,11 +409,31 @@
       .artista:nth-child(6){
         background-color: #232323;
         border-radius: pxArem(6);
-        box-icon[name='volume-full']{
+        img[alt="volume"]{
           margin-left: pxArem(180);
           width: pxArem(18);
           height: pxArem(18);
           @include movilS(){
+            width: pxArem(15);
+            height: pxArem(15);
+            margin-left: 0;
+          }
+          @include movilM(){
+            width: pxArem(15);
+            height: pxArem(15);
+            margin-left: 0;
+          }
+          @include movilL(){
+            width: pxArem(15);
+            height: pxArem(15);
+            margin-left: 0;
+          }
+          @include tablet(){
+            width: pxArem(15);
+            height: pxArem(15);
+            margin-left: 0;
+          }
+          @include laptop1024(){
             width: pxArem(15);
             height: pxArem(15);
             margin-left: 0;
@@ -241,7 +451,9 @@
       }
     }
 
-    
+    @include tablet(){
+      height: pxArem(421.3)
+    }
   }
   
 }

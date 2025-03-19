@@ -22,7 +22,7 @@
                 
                 @include paddingElemLEFTscreen();
 
-                box-icon[name="chevron-left"]{
+                img[alt="back"]{
                     background-color: #4D545A;
                     border-radius: 50%;
                     opacity: 0.8;
@@ -30,26 +30,81 @@
                         width: pxArem(20);
                         height: pxArem(20);
                     }
+                    @include movilM(){
+                        width: pxArem(20);
+                        height: pxArem(20);
+                    }
+                    @include movilL(){
+                        width: pxArem(20);
+                        height: pxArem(20);
+                    }
+                    @include tablet(){
+                        width: pxArem(20);
+                        height: pxArem(20);
+                    }
+                    @include laptop1024(){
+                        width: pxArem(20);
+                        height: pxArem(20);
+                    }
                 }
-                box-icon[name="chevron-left"]:hover{
+                img[alt="back"]:hover{
                     opacity: 0.9;
                     cursor: pointer;
                 }
-                box-icon[name="chevron-right"]{
+                img[alt="forward"]{
                     background-color: #4D545A;
                     border-radius: 50%;
                     opacity: 0.8;
                     @include movilS(){
                         width: pxArem(20);
                         height: pxArem(20);
-                        
+                    }
+                    @include movilM(){
+                        width: pxArem(20);
+                        height: pxArem(20);
+                    }
+                    @include movilL(){
+                        width: pxArem(20);
+                        height: pxArem(20);
+                    }
+                    @include tablet(){
+                        width: pxArem(20);
+                        height: pxArem(20);
+                    }
+                    @include laptop1024(){
+                        width: pxArem(20);
+                        height: pxArem(20);
                     }
                 }
-                box-icon[name="chevron-right"]:hover{
+                img[alt="forward"]:hover{
                     opacity: 0.9;
                     cursor: pointer;
                 }
                 @include movilS(){
+                    padding: 0;
+                    position: relative;
+                    top: pxArem(4);
+                    left: pxArem(3);
+                }
+                @include movilM(){
+                    padding: 0;
+                    position: relative;
+                    top: pxArem(4);
+                    left: pxArem(3);
+                }
+                @include movilL(){
+                    padding: 0;
+                    position: relative;
+                    top: pxArem(4);
+                    left: pxArem(3);
+                }
+                @include tablet(){
+                    padding: 0;
+                    position: relative;
+                    top: pxArem(4);
+                    left: pxArem(3);
+                }
+                @include laptop1024(){
                     padding: 0;
                     position: relative;
                     top: pxArem(4);
@@ -84,12 +139,37 @@
                             width: pxArem(15);
                             height: pxArem(15);
                         }
+                        @include movilM(){
+                            width: pxArem(15);
+                            height: pxArem(15);
+                        }
+                        @include movilL(){
+                            width: pxArem(15);
+                            height: pxArem(15);
+                        }
+                        @include tablet(){
+                            width: pxArem(15);
+                            height: pxArem(15);
+                        }
+                        @include laptop1024(){
+                            width: pxArem(15);
+                            height: pxArem(15);
+                        }
                     }
 
                     #sc2c1p{
                         @include movilS(){
                             display: none;
                         }
+                        @include movilM(){
+                            display: none;
+                        }
+                        @include movilL(){
+                            display: none;
+                        }
+                        
+                        
+                        
                     }
                     @include movilS(){
                         font-size: 0.48rem;
@@ -97,6 +177,30 @@
                         border-radius: 50%;
                         background-color: transparent;
                         
+                    }
+                    @include movilM(){
+                        font-size: 0.48rem;
+                        padding: 0;
+                        border-radius: 50%;
+                        background-color: transparent;
+                    }
+                    @include movilL(){
+                        font-size: 0.48rem;
+                        padding: 0;
+                        border-radius: 50%;
+                        background-color: transparent;
+                    }
+                    @include tablet(){
+                        font-size: 0.48rem;
+                        padding: 0;
+                        border-radius: 50%;
+                        background-color: transparent;
+                    }
+                    @include laptop1024(){
+                        font-size: 0.48rem;
+                        padding: 0;
+                        border-radius: 50%;
+                        background-color: transparent;
                     }
                     }
 
@@ -125,6 +229,30 @@
                                 background-color: transparent;
                                 border: none;
                             }
+                            @include movilM(){
+                                width: pxArem(15);
+                                height: pxArem(15);
+                                background-color: transparent;
+                                border: none;
+                            }
+                            @include movilL(){
+                                width: pxArem(15);
+                                height: pxArem(15);
+                                background-color: transparent;
+                                border: none;
+                            }
+                            @include tablet(){
+                                width: pxArem(15);
+                                height: pxArem(15);
+                                background-color: transparent;
+                                border: none;
+                            }
+                            @include laptop1024(){
+                                width: pxArem(15);
+                                height: pxArem(15);
+                                background-color: transparent;
+                                border: none;
+                            }
                         }
 
                         #bell:hover{
@@ -141,6 +269,18 @@
                             @include movilS(){
                                 border: none;
                             }
+                            @include movilM(){
+                                border: none;
+                            }
+                            @include movilL(){
+                                border: none;
+                            }
+                            @include tablet(){
+                                border: none;
+                            }
+                            @include laptop1024(){
+                                border: none;
+                            }
                         }
 
                         img:hover{
@@ -149,6 +289,26 @@
                         }
                     }
                     @include movilS(){
+                        padding: 0;
+                        gap: 0;
+                        justify-content: space-around;
+                    }
+                    @include movilM(){
+                        padding: 0;
+                        gap: 0;
+                        justify-content: space-around;
+                    }
+                    @include movilL(){
+                        padding: 0;
+                        gap: 0;
+                        justify-content: space-around;
+                    }
+                    @include tablet(){
+                        padding: 0;
+                        gap: 0;
+                        justify-content: space-around;
+                    }
+                    @include laptop1024(){
                         padding: 0;
                         gap: 0;
                         justify-content: space-around;
@@ -169,13 +329,57 @@
                                 width: pxArem(15);
                                 height: pxArem(15);
                             }
+                            @include movilM(){
+                                width: pxArem(15);
+                                height: pxArem(15);
+                            }
+                            @include movilL(){
+                                width: pxArem(15);
+                                height: pxArem(15);
+                            }
+                            @include tablet(){
+                                width: pxArem(15);
+                                height: pxArem(15);
+                            }
+                            @include laptop1024(){
+                                width: pxArem(15);
+                                height: pxArem(15);
+                            }
                         }
                         #sc3c1p{
                             @include movilS(){
                                 font-size: 0.6rem;
                             }
+                            @include movilM(){
+                                font-size: 0.6rem;
+                            }
+                            @include movilL(){
+                                font-size: 0.6rem;
+                            }
+                            @include tablet(){
+                                font-size: 0.6rem;
+                            }
+                            @include laptop1024(){
+                                font-size: 0.6rem;
+                            }
                         }
                         @include movilS(){
+                            position: relative;
+                            top: pxArem(6)
+                        }
+                        @include movilM(){
+                            position: relative;
+                            top: pxArem(6)
+                        }
+                        @include movilL(){
+                            position: relative;
+                            top: pxArem(6)
+                        }
+                        @include tablet(){
+                            position: relative;
+                            top: pxArem(6)
+                        }
+                        @include laptop1024(){
                             position: relative;
                             top: pxArem(6)
                         }
@@ -187,11 +391,35 @@
                         @include movilS(){
                             font-size: 2.4rem;
                         }
+                        @include movilM(){
+                            font-size: 2.4rem;
+                        }
+                        @include movilL(){
+                            font-size: 2.4rem;
+                        }
+                        @include tablet(){
+                            font-size: 2.4rem;
+                        }
+                        @include laptop1024(){
+                            font-size: 2.4rem;
+                        }
                     }
                     #sc3h5{
                         @include paddingElemLEFTscreen();
                         margin: 0 0 pxArem(18) 0;
                         @include movilS(){
+                            font-size: 0.63rem;
+                        }  
+                        @include movilM(){
+                            font-size: 0.63rem;
+                        }  
+                        @include movilL(){
+                            font-size: 0.63rem;
+                        }  
+                        @include tablet(){
+                            font-size: 0.63rem;
+                        }  
+                        @include laptop1024(){
                             font-size: 0.63rem;
                         }  
                     }
@@ -200,7 +428,19 @@
               @include movilS(){
                 height: pxArem(191.39);
               }  
-                
+
+              @include movilM(){
+                height: pxArem(191.39);
+              } 
+              @include movilL(){
+                height: pxArem(191.39);
+              } 
+              @include tablet(){
+                height: pxArem(191.39);
+              } 
+              @include laptop1024(){
+                height: pxArem(191.39);
+              }   
             
         }
         
@@ -227,6 +467,22 @@
                     width: pxArem(24);
                     height: pxArem(24);
                 }
+                @include movilM(){
+                    width: pxArem(24);
+                    height: pxArem(24);
+                }
+                @include movilL(){
+                    width: pxArem(24);
+                    height: pxArem(24);
+                }
+                @include tablet(){
+                    width: pxArem(24);
+                    height: pxArem(24);
+                }
+                @include laptop1024(){
+                    width: pxArem(24);
+                    height: pxArem(24);
+                }
             }
             #s2c1p{
                 border: pxArem(1) solid white;
@@ -238,6 +494,18 @@
                 @include movilS(){
                     padding: pxArem(6);
                 }
+                @include movilM(){
+                    padding: pxArem(6);
+                }
+                @include movilL(){
+                    padding: pxArem(6);
+                }
+                @include tablet(){
+                    padding: pxArem(6);
+                }
+                @include laptop1024(){
+                    padding: pxArem(6);
+                }
             }
             @include movilS(){
                 position: relative;
@@ -246,7 +514,34 @@
                 gap: pxArem(6);
                 padding: 0;
             }
-            
+            @include movilM(){
+                position: relative;
+                top: pxArem(6);
+                justify-content: space-around;
+                gap: pxArem(6);
+                padding: 0;
+            }
+            @include movilL(){
+                position: relative;
+                top: pxArem(6);
+                justify-content: space-around;
+                gap: pxArem(6);
+                padding: 0;
+            }
+            @include tablet(){
+                position: relative;
+                top: pxArem(6);
+                justify-content: space-around;
+                gap: pxArem(6);
+                padding: 0;
+            }
+            @include laptop1024(){
+                position: relative;
+                top: pxArem(6);
+                justify-content: space-around;
+                gap: pxArem(6);
+                padding: 0;
+            }
         }
         
         &__container2{
@@ -255,6 +550,26 @@
                 margin: pxArem(21) 0 pxArem(18) pxArem(21);
                 font-weight: 600;
                 @include movilS(){
+                    margin: pxArem(15) 0 pxArem(9) pxArem(15);
+                    font-size: 0.7rem;
+                    font-weight: bold;
+                }
+                @include movilM(){
+                    margin: pxArem(15) 0 pxArem(9) pxArem(15);
+                    font-size: 0.7rem;
+                    font-weight: bold;
+                }
+                @include movilL(){
+                    margin: pxArem(15) 0 pxArem(9) pxArem(15);
+                    font-size: 0.7rem;
+                    font-weight: bold;
+                }
+                @include tablet(){
+                    margin: pxArem(15) 0 pxArem(9) pxArem(15);
+                    font-size: 0.7rem;
+                    font-weight: bold;
+                }
+                @include laptop1024(){
                     margin: pxArem(15) 0 pxArem(9) pxArem(15);
                     font-size: 0.7rem;
                     font-weight: bold;
@@ -293,6 +608,13 @@
                     @include movilS(){
                         display: none;
                     }
+                    @include movilM(){
+                        display: none;
+                    }
+                    @include movilL(){
+                        display: none;
+                    }
+                    
                 }
                &__container{
                 @include flexbox(row);
@@ -303,9 +625,28 @@
                 #songheart{
                     margin-right: pxArem(9);
                     padding: pxArem(1);
-                  
                     width: pxArem(18);
                     @include movilS(){
+                        margin: 0;
+                        padding: 0;
+                        width: pxArem(15);
+                    }
+                    @include movilM(){
+                        margin: 0;
+                        padding: 0;
+                        width: pxArem(15);
+                    }
+                    @include movilL(){
+                        margin: 0;
+                        padding: 0;
+                        width: pxArem(15);
+                    }
+                    @include tablet(){
+                        margin: 0 ;
+                        padding: 0;
+                       
+                    }
+                    @include laptop1024(){
                         margin: 0;
                         padding: 0;
                         width: pxArem(15);
@@ -318,6 +659,27 @@
                     width: 100%;
                     right: 0;
                 }
+                @include movilM(){
+                    flex-direction: row-reverse;
+                    width: 100%;
+                    right: 0;
+                }
+                @include movilL(){
+                    flex-direction: row-reverse;
+                    width: 100%;
+                    right: 0;
+                }
+                @include tablet(){
+                    flex-direction: row-reverse;
+                    width: 100%;
+                    right: 0;
+                    
+                }
+                @include laptop1024(){
+                    flex-direction: row-reverse;
+                    width: 100%;
+                    right: 0;
+                }
                }
                @include movilS(){
                 grid-template-columns: 10% 10% 50% 25% 5%;
@@ -325,6 +687,31 @@
                 padding: pxArem(3);
                 
                }
+               @include movilM(){
+                grid-template-columns: 10% 10% 50% 25% 5%;
+                column-gap: pxArem(3);
+                padding: pxArem(3);
+                
+               }
+               @include movilL(){
+                grid-template-columns: 10% 10% 50% 25% 5%;
+                column-gap: pxArem(3);
+                padding: pxArem(3);
+                
+               }
+               @include tablet(){
+                grid-template-columns: 10% 10% 40% 20% 20%;
+                column-gap: pxArem(3);
+                padding: pxArem(3);
+                
+               }
+               @include laptop1024(){
+                grid-template-columns: 10% 10% 40% 20% 20%;
+                column-gap: pxArem(3);
+                padding: pxArem(3);
+                
+               }
+               
             }
             
         }
