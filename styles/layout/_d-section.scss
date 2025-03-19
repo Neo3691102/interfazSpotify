@@ -7,7 +7,7 @@
 
     &__container1{
         @include flexbox(row);
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         padding: 0 0 0 pxArem(27);
         gap: pxArem(18);
@@ -19,11 +19,27 @@
                 width: pxArem(33);
                 height: pxArem(33);
              }
+             @include movilM(){
+                width: pxArem(33);
+                height: pxArem(33);
+             }
+             @include movilL(){
+                width: pxArem(33);
+                height: pxArem(33);
+             }
+             @include tablet(){
+                width: pxArem(33);
+                height: pxArem(33);
+             }
+             @include laptop1024(){
+                width: pxArem(33);
+                height: pxArem(33);
+             }
         }
         &__subcontainer{
             color: white;
             @include flexbox(column);
-            width: 100%;
+           
             #c1scp1{
                 
                 font-size: clamp(0.7rem, 1vw, 0.8rem);
@@ -38,17 +54,60 @@
             @include movilS(){
                 width: 100%;
             }
+            @include movilM(){
+                width: 100%;
+            }
+            @include movilL(){
+                width: 100%;
+            }
+            @include tablet(){
+                width: 100%;
+            }
+            @include laptop1024(){
+                width: 100%;
+            }
         }
-        box-icon{
+        img{
             width: pxArem(15);
+            
             @include movilS(){
+                width: pxArem(21);
+                margin-right: pxArem(15);
+            }
+            @include movilM(){
+                width: pxArem(21);
+                margin-right: pxArem(15);
+            }
+            @include movilL(){
+                width: pxArem(21);
+                margin-right: pxArem(15);
+            }
+            @include tablet(){
+                width: pxArem(21);
+                margin-right: pxArem(15);
+            }
+            @include laptop1024(){
                 width: pxArem(21);
                 margin-right: pxArem(15);
             }
         }
         @include movilS(){
-            
-            
+            padding: 0 0 0 pxArem(15);
+            gap: pxArem(9);
+        }
+        @include movilM(){  
+            padding: 0 0 0 pxArem(15);
+            gap: pxArem(9);
+        }
+        @include movilL(){  
+            padding: 0 0 0 pxArem(15);
+            gap: pxArem(9);
+        }
+        @include tablet(){  
+            padding: 0 0 0 pxArem(15);
+            gap: pxArem(9);
+        }
+        @include laptop1024(){  
             padding: 0 0 0 pxArem(15);
             gap: pxArem(9);
         }
@@ -65,7 +124,7 @@
             width: 30%;
             margin: 0 auto;
 
-            box-icon[name="shuffle"]{
+            img[alt="shuffle"]{
                 width: pxArem(15);
                 height: pxArem(15);
             }
@@ -86,14 +145,28 @@
                 width: pxArem(30);
                 height: pxArem(30);
             }
-            box-icon[name="repeat"]{
+            img[alt="repeat"]{
                 width: pxArem(15);
                 height: pxArem(15);
             }
             @include movilS(){
-                
                 width: 100%;
-         
+                padding: 0;
+            }
+            @include movilM(){
+                width: 100%;
+                padding: 0;
+            }
+            @include movilL(){
+                width: 100%;
+                padding: 0;
+            }
+            @include tablet(){
+                width: 100%;
+                padding: 0;
+            }
+            @include laptop1024(){
+                width: 100%;
                 padding: 0;
             }
         }
@@ -128,7 +201,16 @@
                 @extend %fontSize;
             }
             @include movilS(){
-                
+                bottom: 0;
+                width: 100%;
+                padding: 0 pxArem(9);
+            }
+            @include movilM(){
+                bottom: 0;
+                width: 100%;
+                padding: 0 pxArem(9);
+            }
+            @include movilL(){
                 bottom: 0;
                 width: 100%;
                 padding: 0 pxArem(9);
@@ -144,7 +226,7 @@
         gap: pxArem(9);
         position: relative;
         right: pxArem(9);
-        box-icon{
+        img{
             width: pxArem(18);
         }
         #volumebar{
@@ -154,15 +236,38 @@
             border-radius: pxArem(3);
         }
         @include movilS(){
-            
             @include flexbox(row);
             justify-content: center;
             padding: 0;
             right: 0;
-            
+        }
+        @include movilM(){
+            @include flexbox(row);
+            justify-content: center;
+            padding: 0;
+            right: 0;
+        }
+        @include movilL(){
+            @include flexbox(row);
+            justify-content: center;
+            padding: 0;
+            right: 0;
         }
     }
     @include movilS(){
+        @include flexbox(column);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    @include movilM(){
+        @include flexbox(column);
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        
+    }
+    @include movilL(){
         @include flexbox(column);
         position: fixed;
         bottom: 0;
