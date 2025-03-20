@@ -568,7 +568,7 @@
 }
 
 .c-section {
-  height: auto;
+  height: 90vh;
 }
 .c-section__s1 {
   background-color: #000000;
@@ -1127,7 +1127,7 @@
   }
 }
 .c-section__s2 {
-  height: 18.75rem; /*corregir y fusionar seccion central con reproductor y hacer lo mismo con las otras*/
+  height: 76%; /*corregir y fusionar seccion central con reproductor y hacer lo mismo con las otras*/
   background: linear-gradient(#314051, #121212 15%);
 }
 .c-section__s2__container1 {
@@ -1686,6 +1686,10 @@
   background-color: #000000;
   display: grid;
   grid-template-columns: 1fr 50% 1fr;
+  position: relative;
+  z-index: 100;
+  height: 10vh;
+  align-items: center;
 }
 .d-section__container1 {
   display: flex;
@@ -1987,6 +1991,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: auto;
   }
 }
 @media screen and (min-width: 20.0625rem) and (max-width: 23.4375rem) {
@@ -1996,6 +2001,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: auto;
   }
 }
 @media screen and (min-width: 23.5rem) and (max-width: 26.5625rem) {
@@ -2005,6 +2011,7 @@
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: auto;
   }
 }
 @media screen and (min-width: 26.625rem) and (max-width: 48rem) {

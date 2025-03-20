@@ -1,5 +1,5 @@
 .c-section{
-    height: auto;
+    height: 90vh;
    
     &__s1{
         background-color: $main-color;
@@ -447,7 +447,7 @@
     }
 
     &__s2{
-        height: pxArem(300); /*corregir y fusionar seccion central con reproductor y hacer lo mismo con las otras*/
+        height: 76%; /*corregir y fusionar seccion central con reproductor y hacer lo mismo con las otras*/
         background: linear-gradient( #314051, #121212 15%);
        
         
