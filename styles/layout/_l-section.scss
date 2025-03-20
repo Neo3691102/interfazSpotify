@@ -3,7 +3,7 @@
 .l-section{
     background-color: $main-color;
     @include flexbox(column);
-    height: 100%;
+    height: auto;
     &__s1{
       background-color: $secondary-color;
       border-radius: pxArem(12);

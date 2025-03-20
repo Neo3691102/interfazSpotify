@@ -1,5 +1,5 @@
 .c-section{
-    height: 100%;
+    height: auto;
    
     &__s1{
         background-color: $main-color;
@@ -714,6 +714,12 @@
                
             }
             
+        }
+        @include tablet(){
+            height: 71%;
+        }
+        @include laptop1024(){
+            height: 80.5%;
         }
     }
     

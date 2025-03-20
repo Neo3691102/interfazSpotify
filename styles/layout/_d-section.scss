@@ -274,4 +274,12 @@
         width: 100%;
         
     }
+    @include tablet(){
+        height: 10vh;
+        align-items: center;
+    }
+    @include laptop1024(){
+        height: 10vh;
+        align-items: center;
+    }
 }

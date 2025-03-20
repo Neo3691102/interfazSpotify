@@ -164,13 +164,19 @@
                     @include tablet(){
                         font-size: 0.5rem;
                     }
+                     @include laptop1024(){
+                        padding: pxArem(3);
+                        font-size: 0.5rem;
+                     }
                 }
+                
              }
         }
 
        @include tablet(){
         height: pxArem(247.39);
        }
+       
     }
     @include movilS(){
         grid-row-start: 2;
