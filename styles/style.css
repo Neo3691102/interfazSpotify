@@ -569,6 +569,7 @@
 
 .c-section {
   height: 90vh;
+  overflow: hidden;
 }
 .c-section__s1 {
   background-color: #000000;
