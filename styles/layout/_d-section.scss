@@ -95,14 +95,17 @@
             }
         }
         @include movilS(){
+            width: 100%;
             padding: 0 0 0 pxArem(15);
             gap: pxArem(9);
         }
         @include movilM(){  
+            width: 100%;
             padding: 0 0 0 pxArem(15);
             gap: pxArem(9);
         }
-        @include movilL(){  
+        @include movilL(){ 
+            width: 100%; 
             padding: 0 0 0 pxArem(15);
             gap: pxArem(9);
         }
@@ -219,6 +222,15 @@
                 padding: 0 pxArem(9);
             }
         }
+        @include movilS(){
+            width: 100%;
+        }
+        @include movilM(){
+            width: 100%;
+        }
+        @include movilL(){
+            width: 100%;
+        }
     }
 
     &__container3{
@@ -255,6 +267,15 @@
             justify-content: center;
             padding: 0;
             right: 0;
+        }
+        @include movilS(){
+            width: 100%;
+        }
+        @include movilM(){
+            width: 100%;
+        }
+        @include movilL(){
+            width: 100%;
         }
     }
     @include movilS(){
